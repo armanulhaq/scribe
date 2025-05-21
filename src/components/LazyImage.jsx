@@ -1,7 +1,6 @@
 import { Image } from "@imagekit/react";
 
 const LazyImage = ({ src, className, w, h, alt }) => {
-    console.log("LazyImage src prop:", src);
     return (
         <Image
             urlEndpoint={import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT}
