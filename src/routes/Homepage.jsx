@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import LazyImage from "../components/LazyImage";
 import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
+import PostList from "../components/PostList";
 //import MainCategories from "../components/MainCategories";
 //import FeaturedPosts from "../components/FeaturedPosts";
 //import PostList from "../components/PostList";
@@ -43,8 +44,11 @@ const Homepage = () => {
             <MainCategories />
             {/* FEATURED POSTS */}
             <FeaturedPosts />
-            {/* <FeaturedPosts /> */}
             {/* POST LIST */}
+            <div className="">
+                <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+                <PostList />
+            </div>
         </div>
     );
 };
