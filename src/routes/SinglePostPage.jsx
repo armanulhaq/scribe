@@ -31,7 +31,7 @@ const SinglePostPage = () => {
                 </div>
 
                 <div className="hidden lg:block w-2/5">
-                    <LazyImage src="featured1.jpeg" />
+                    <LazyImage src="featured1.jpeg" className="rounded-3xl" />
                 </div>
             </div>
             {/* content */}
@@ -164,7 +164,7 @@ const SinglePostPage = () => {
                         </p>
                         <div className="flex gap-2 items-center">
                             <Link>
-                                <LazyImage src="facebook.png" w="20" />
+                                <LazyImage src="facebook.svg" w="20" />
                             </Link>
                             <Link>
                                 <LazyImage src="instagram.svg" w="25" />

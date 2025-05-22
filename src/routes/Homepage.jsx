@@ -6,21 +6,21 @@ import PostList from "../components/PostList";
 
 const Homepage = () => {
     return (
-        <div className="mt-4 flex flex-col gap-4">
+        <div className="mt-4 flex flex-col gap-4 ">
             <div className="flex gap-2 items-center">
                 <Link to="/">Home</Link>
                 <span className="text-xs">&gt;</span>
                 <span className="text-[#2667ff]">Blogs and Articles</span>
             </div>
 
-            <div className="flex items-center justify-between lg:gap-15">
+            <div className="flex items-center justify-between lg:gap-15 bg-[#2667ff] px-15 py-10 rounded-xl">
                 {/* titles */}
                 <div className="my-20 lg:w-[50%]">
-                    <h1 className="text-[#2667ff] text-4xl md:text-5xl lg:text-7xl font-bold">
+                    <h1 className="text-[white] text-4xl md:text-5xl lg:text-7xl font-bold">
                         Ideas that <br />
                         inspire change.
                     </h1>
-                    <p className="mt-4 md:mt-6 lg:mt-6 text-md md:text-lg">
+                    <p className="mt-4 md:mt-6 lg:mt-6 text-md md:text-lg text-white">
                         Explore insightful stories, unique perspectives, and
                         expert opinions from writers passionate about topics
                         that matter—designed to inform, inspire, and spark
@@ -32,7 +32,7 @@ const Homepage = () => {
                         className="hidden md:flex rounded-xl"
                         src={`${
                             import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT
-                        }/featured1.jpeg`}
+                        }/main.jpg`}
                         alt="Hero Image"
                     />
                 </div>

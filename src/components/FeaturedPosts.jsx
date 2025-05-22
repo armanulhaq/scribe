@@ -26,17 +26,16 @@ const FeaturedPosts = () => {
             {/* Others */}
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
                 {/* Second */}
-                <div className="lg:h-1/3 flex justify-between gap-4">
+                <div className="lg:h-1/3 flex items-center justify-between gap-4">
                     <div className="w-1/3 aspect-video">
                         <LazyImage
-                            src="featured2.jpeg"
+                            src="featured2.jpg"
                             className="rounded-3xl object cover"
-                            w="298"
                         />
                     </div>
 
                     {/* details */}
-                    <div className="w-2/3 items-center gap-2 text-sm lg:text-base mb-4 py-5">
+                    <div className="w-2/3 items-center gap-2 text-sm lg:text-base  py-5">
                         <div className="flex items-center gap-2">
                             <h1 className="font-semibold text-xs">02.</h1>
                             <Link className="text-blue-600 text-xs">
@@ -48,7 +47,7 @@ const FeaturedPosts = () => {
                         </div>
                         <Link
                             to="/test"
-                            className="text-base sm:text-lg md:text-2xl lg:text-lg xl:text-2xl font-medium"
+                            className="text-base sm:text-lg md:text-2xl lg:text-lg xl:text-xl font-medium"
                         >
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Voluptatum sunt deserunt molestias?
@@ -56,16 +55,15 @@ const FeaturedPosts = () => {
                     </div>
                 </div>
                 {/* Third */}
-                <div className="lg:h-1/3 flex justify-between gap-4">
+                <div className="lg:h-1/3 flex items-center  justify-between gap-4">
                     <div className="w-1/3 aspect-video">
                         <LazyImage
                             src="featured3.jpeg"
                             className="rounded-3xl object cover"
-                            w="298"
                         />
                     </div>
                     {/* details */}
-                    <div className="w-2/3 items-center gap-4 text-sm lg:text-base mb-4 py-5">
+                    <div className="w-2/3 items-center gap-4 text-sm lg:text-base py-5">
                         <div className="flex items-center gap-2">
                             <h1 className="font-semibold text-xs">03.</h1>
                             <Link className="text-blue-600 text-xs">
@@ -77,7 +75,7 @@ const FeaturedPosts = () => {
                         </div>
                         <Link
                             to="/test"
-                            className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
+                            className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-xl font-medium"
                         >
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Voluptatum sunt deserunt molestias?
@@ -85,16 +83,15 @@ const FeaturedPosts = () => {
                     </div>
                 </div>
                 {/* Fourth */}
-                <div className="lg:h-1/3 flex justify-between gap-4">
+                <div className="lg:h-1/3 flex items-center justify-between gap-4">
                     <div className="w-1/3 aspect-video">
                         <LazyImage
                             src="featured4.jpeg"
                             className="rounded-3xl object cover"
-                            w="298"
                         />
                     </div>
                     {/* details */}
-                    <div className="w-2/3 items-center gap-4 text-sm lg:text-base mb-4 py-5">
+                    <div className="w-2/3 items-center gap-4 text-sm lg:text-base py-5">
                         <div className="flex items-center gap-2">
                             <h1 className="font-semibold text-xs">04.</h1>
                             <Link className="text-blue-600 text-xs">
@@ -106,7 +103,7 @@ const FeaturedPosts = () => {
                         </div>
                         <Link
                             to="/test"
-                            className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
+                            className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-xl font-medium"
                         >
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Voluptatum sunt deserunt molestias?
