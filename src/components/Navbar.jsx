@@ -23,7 +23,7 @@ const Navbar = () => {
                 <span className="text-[#2667ff]">Scribe</span>
             </Link>
             {/* <Search /> */}
-            <div className="bg-gray-100 px-4 py-2 rounded-full items-center gap-2 hidden md:flex">
+            <div className="bg-gray-100 px-4 py-3 rounded-full items-center gap-2 hidden md:flex">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"

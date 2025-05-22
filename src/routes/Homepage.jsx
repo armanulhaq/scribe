@@ -3,9 +3,6 @@ import LazyImage from "../components/LazyImage";
 import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
 import PostList from "../components/PostList";
-//import MainCategories from "../components/MainCategories";
-//import FeaturedPosts from "../components/FeaturedPosts";
-//import PostList from "../components/PostList";
 
 const Homepage = () => {
     return (
