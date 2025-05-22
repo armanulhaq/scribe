@@ -2,7 +2,8 @@ import { useState } from "react";
 import LazyImage from "./LazyImage";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-// import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { Pen } from "lucide-react";
 
 const Navbar = () => {
     const [openHam, setOpenHam] = useState(false);
@@ -15,12 +16,31 @@ const Navbar = () => {
                     src={`${
                         import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT
                     }/logo.svg`}
-                    alt="Lama Logo"
+                    alt="Scribe Logo"
                     w={32}
                     h={32}
                 />
-                <span>Scribe</span>
+                <span className="text-[#2667ff]">Scribe</span>
             </Link>
+            {/* <Search /> */}
+            <div className="bg-gray-100 px-4 py-2 rounded-full items-center gap-2 hidden md:flex">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="gray"
+                >
+                    <circle cx="10.5" cy="10.5" r="7.5" />
+                    <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                </svg>
+                <input
+                    type="text"
+                    placeholder="Search a post..."
+                    className="md:w-50 lg:w-80 text-sm"
+                />
+            </div>
             {/* MOBILE MENU */}
             <div className="md:hidden">
                 {/* MOBILE BUTTON */}
@@ -70,9 +90,9 @@ const Navbar = () => {
                         to="/posts?sort=popular"
                         onClick={() => setOpenHam(false)}
                     >
-                        Most Popular
+                        Popular
                     </Link>
-                    <Link to="/" onClick={() => setOpenHam(false)}>
+                    <Link to="/about" onClick={() => setOpenHam(false)}>
                         About
                     </Link>
                     <Link to="/login" onClick={() => setOpenHam(false)}>
@@ -83,27 +103,30 @@ const Navbar = () => {
                 </div>
             </div>
             {/* DESKTOP MENU */}
-            <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
-                <Link to="/">Home</Link>
+            <div className="hidden md:flex items-center gap-4 xl:gap-12 font-medium">
+                <Link to="/about">About</Link>
                 <Link to="/posts?sort=trending">Trending</Link>
-                <Link to="/posts?sort=popular">Most Popular</Link>
-                <Link to="/">About</Link>
-                <Link to="/login">
-                    <Button className="py-2 px-7 rounded-3xl bg-[#2667ff] text-white">
-                        Login
-                    </Button>
-                </Link>
+                <Link to="/posts?sort=popular">Popular</Link>
 
-                {/* <SignedOut>
-                    <Link>
-                        <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
-                            Login 👋
-                        </button>
-                    </a>
+                <Link to="/login"></Link>
+                <SignedIn>
+                    <Button variant="outline">
+                        <Link className="flex items-center gap-2" to="/write">
+                            Write <Pen className="h-4 w-4" />
+                        </Link>
+                    </Button>
+                </SignedIn>
+
+                <SignedOut>
+                    <Link to="/login">
+                        <Button className="py-2 px-7 rounded-3xl bg-[#2667ff] text-white">
+                            Login
+                        </Button>
+                    </Link>
                 </SignedOut>
                 <SignedIn>
                     <UserButton />
-                </SignedIn> */}
+                </SignedIn>
             </div>
         </div>
     );
