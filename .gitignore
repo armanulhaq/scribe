@@ -1,1 +1,16 @@
-.vite
+# macOS
+.DS_Store
+
+# Vite cache
+.vite/
+.vite/deps/
+
+# Node
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# Env
+.env
